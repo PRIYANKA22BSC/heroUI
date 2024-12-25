@@ -134,7 +134,6 @@
 
       .box{
         display: flex;
-        background-color: #fff;
         weight: 90vw;
         justify-content: flex-wrap;
       }
@@ -145,11 +144,9 @@
       }
 
       .rightBox{
-        background-color: #555;
         width: 90vw;
       }
       .imageCard{
-        background-color: #555;
         width: 90vw;
       }
   }
