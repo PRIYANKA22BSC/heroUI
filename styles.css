@@ -87,7 +87,7 @@
     height: 150px;
     weight: 70px;
     max-weight: 70px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
   }
 
   
@@ -101,8 +101,8 @@
   .image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 20px;
+    object-fit: cover;
   }
   
 
@@ -156,7 +156,7 @@
   
   @media (max-width: 768px) {
     .imageCard {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
       gap: 8px;
     }
   }
