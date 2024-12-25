@@ -153,19 +153,18 @@
         width: 90vw;
       }
   }
-
   
   @media (max-width: 768px) {
     .imageCard {
       grid-template-columns: repeat(3, minmax(100px, 1fr));
-      gap: 8px;
+      gap: 15px;
     }
   }
   
   @media (max-width: 480px) {
     .imageCard {
       grid-template-columns: repeat(2, 1fr);
-      gap: 6px;
+      gap: 10px;
     }
   }
   
