@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +34,9 @@
     font-size: 65px;
     font-weight: 900;
     line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .box1 {
@@ -77,12 +79,6 @@
   .rightBox {
     width: 55%;
   }
-  
-  .imageCard {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-  }
 
   .image{
     min-height: 120px;
@@ -90,11 +86,82 @@
     weight: 70px;
     max-weight: 70px;
   }
+
+  
+  .imageCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 1rem;
+  }
   
   .image img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 15px;
     object-fit: cover;
+  }
+  
+
+  @media (max-width: 780px) {
+    .imageCard {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+      }
+
+      .mainContainer {
+        margin-top:30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+        gap: 35px;
+      }
+
+      .leftBox {
+        width: 90%;
+        padding-Left: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .box{
+        display: flex;
+        background-color: #fff;
+        weight: 90vw;
+        justify-content: flex-wrap;
+      }
+
+      .image{
+        height: fit-content;
+        min-weight: 30vw;
+      }
+
+      .rightBox{
+        background-color: #555;
+        width: 90vw;
+      }
+      .imageCard{
+        background-color: #555;
+        width: 90vw;
+      }
+  }
+
+  
+  @media (max-width: 768px) {
+    .imageCard {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imageCard {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+    }
   }
   
