@@ -36,7 +36,7 @@
     font-weight: 900;
     line-height: 1.5;
     display: flex;
-    align-items: center;
+    align-items:baseline;
     /* justify-content: center; */
     text-align: right;
   }
